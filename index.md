@@ -46,7 +46,7 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 Via       | URL
 -----------|-----------
 <h3>Blog</h3>      | <h3><a href="http://bit.ly/blenditbayes/" target="_blank">bit.ly/blenditbayes</a><h3>
-<h3>Twitter</h3>   | <h3><a href="https://twitter.com/matlabulous/" target="_blank">@matlabulous</a></h3>
+<h3>Twitter</h3>   | <h3><a href="http://bit.ly/twitter_woobe/" target="_blank">@matlabulous</a></h3>
 <h3>E-mail</h3>    | <h3>[jofai.chow@gmail.com](mailto:jofai.chow@gmail.com)</h3>
 <h3>LinkedIn</h3>  | <h3><a href="http://bit.ly/linkedin_jofaichow/" target="_blank">bit.ly/linkedin_jofaichow</a></h3>
 <h3>GitHub</h3>    | <h3><a href="http://bit.ly/github_woobe/" target="_blank">bit.ly/github_woobe</a></h3>
