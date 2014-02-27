@@ -35,7 +35,7 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 ## Thank You for Your Attention!
 
 *** =left
-<h1>You can find the slides at </h1><h2><a href="http://londonr_crimemap/" target="_blank">bit.ly/londonr_crimemap</a></h2>
+<h1>You can find the slides at </h1><h2>bit.ly/londonr_crimemap</h2>
   
   
 <center><img src="images/example_quickoutput.png" alt="quick" width="375"></center>
@@ -45,8 +45,8 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 
 Via       | URL
 -----------|-----------
-<h3>Blog</h3>      | <h3><a href="http://bit.ly/blenditbayes/" target="_blank">bit.ly/blenditbayes</a><h3>
-<h3>Twitter</h3>   | <h3><a href="http://bit.ly/twitter_woobe/" target="_blank">@matlabulous</a></h3>
-<h3>E-mail</h3>    | <h3>[jofai.chow@gmail.com](mailto:jofai.chow@gmail.com)</h3>
-<h3>LinkedIn</h3>  | <h3><a href="http://bit.ly/linkedin_jofaichow/" target="_blank">bit.ly/linkedin_jofaichow</a></h3>
-<h3>GitHub</h3>    | <h3><a href="http://bit.ly/github_woobe/" target="_blank">bit.ly/github_woobe</a></h3>
+<h3>Blog</h3>      | <h3>bit.ly/blenditbayes</h3>
+<h3>Twitter</h3>   | <h3>@matlabulous</h3>
+<h3>E-mail</h3>    | <h3>jofai.chow@gmail.com</h3>
+<h3>LinkedIn</h3>  | <h3>bit.ly/linkedin_jofaichow</h3>
+<h3>GitHub</h3>    | <h3>bit.ly/github_woobe</h3>
