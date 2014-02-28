@@ -1,8 +1,8 @@
 ---
 title       : Introducing 'CrimeMap'
 subtitle    : Using R, Shiny and ShinyApps for Quick Web App Development
-author      : Jo-fai Chow
-job         : EngD Candidate in Hydroinformatics, University of Exeter & XP Solutions
+author      : Jo-fai Chow (University of Exeter & XP Solutions)
+job         : Final Year EngD Candidate in Hydroinformatics (Water + Machine Learning)
 logo        : logo_LondonR_date.png
 biglogo     : logo_LondonR_date.png
 license     : by-nc-sa
@@ -13,10 +13,11 @@ hitheme     : tomorrow      # {tomorrow, tomorrow_night, solarized_dark, solariz
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 
 
---- &twocol w1:56% w2:42% .new-background
+--- &twocol w1:56% w2:44% .new-background
 ## Agenda
 
 *** =left
+<h4><br></h4>
 1. <h2>Why R?</h2>
 2. <h2>Introducing 'CrimeMap'</h2>
 3. <h2>What's Next?</h2>
@@ -26,9 +27,31 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 
 
 *** =right
-![LondonR](images/londonr_date_trim.png)
-![LondonRPics](images/londonr_photos.jpg)
-<h4>Above: <b>Hadley Wickham's</b> LondonR talk on <b>dplyr</b> and <b>ggvis</b> back in July 2013 (my first ever LondonR experience).</h4>
+<center><img src="images/londonr_date_trim.png" width="300"></center>
+<br>
+<center><img src="images/londonr_photos.jpg" width="500"></center>
+<br>
+<center><h4>Above: <b>Hadley Wickham's</b> LondonR talk on <b>dplyr</b> and <b>ggvis</b> back in July 2013 (my first ever LondonR experience).</h4></center>
+
+
+
+
+--- &twocol w1:48% w2:48% .new-background
+## CrimeMap - Application Examples
+
+*** =left
+<center><h2>London (roadmap)</h2></center>
+<center><img src="images/example_london.png" alt="london" width="450"><center>
+
+*** =right
+<center><h2>Brighton (hybrid)</h2></center>
+<center><img src="images/example_brighton.png" alt="brighton" width="450"><center>
+
+
+
+
+
+
 
 
 --- &twocol w1:48% w2:48% .new-background
@@ -45,8 +68,8 @@ highlighter : highlight.js  # {highlight.js, prettify, highlight}
 
 Via       | URL
 -----------|-----------
-<h3>Blog</h3>      | <h3>bit.ly/blenditbayes</h3>
-<h3>Twitter</h3>   | <h3>@matlabulous</h3>
+<h3>Blog</h3>      | <h3><a href="http://bit.ly/blenditbayes" target="_blank">bit.ly/blenditbayes</a></h3>
+<h3>Twitter</h3>   | <h3><a href="http://bit.ly/twitter_woobe" target="_blank">@matlabulous</a></h3>
 <h3>E-mail</h3>    | <h3>jofai.chow@gmail.com</h3>
-<h3>LinkedIn</h3>  | <h3>bit.ly/linkedin_jofaichow</h3>
-<h3>GitHub</h3>    | <h3>bit.ly/github_woobe</h3>
+<h3>LinkedIn</h3>  | <h3><a href="http://bit.ly/linkedin_jofaichow" target="_blank">bit.ly/linkedin_jofaichow</a></h3>
+<h3>GitHub</h3>    | <h3><a href="http://bit.ly/github_woobe" target="_blank">bit.ly/github_woobe</a></h3>
