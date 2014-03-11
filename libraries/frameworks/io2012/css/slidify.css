@@ -41,6 +41,7 @@
   font-family: 'Oswald', 'Calibri', sans-serif;
 }
 
+
 /* Fonts and Spacing */
 article p, article li, article li.build, section p, section li{
   font-family: 'Open Sans','Helvetica', 'Crimson Text', 'Garamond',  'Palatino', sans-serif;
@@ -62,6 +63,38 @@ slide:not(.segue) h2{
 /*  color: #02574D;*/
   color: #CC2904;
 }
+
+
+slide:not(.segue) h9{
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -2px;
+  line-height: 1.2em;
+  color: #18191B;
+/*  color: #02574D;*/
+  /*color: #CC2904; */
+}
+
+
+slide:not(.segue) h8{
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: -2px;
+  line-height: 1.2em;
+  color: #18191B;
+/*  color: #02574D;*/
+  /*color: #CC2904; */
+}
+
+
+
+
 
 /* Reduce Space between Title and Body */
 slides > slide > hgroup + article {
@@ -335,6 +368,7 @@ body {
   display: inline;
   font-size: 1em;
 }
+
 slide.segue h2{
  font-family: "Open Sans Condensed";
  font-weight: 700;
@@ -342,8 +376,36 @@ slide.segue h2{
 slide:not(.segue)  h2{
  font-family: "Open Sans Condensed";
  font-weight: 700;
- color: #006699; /* darkslategray; */
+ /* color: #005C8A; /* darkslategray; */
+ color: #19597A;
 }
+
+
+slide.segue h9{
+ font-family: "Open Sans Condensed";
+ font-weight: 700;
+}
+slide:not(.segue)  h9{
+ font-family: "Open Sans Condensed";
+ font-weight: 500;
+ color: #19597A;
+}
+
+
+slide.segue h8{
+ font-family: "Open Sans";
+ font-weight: 700;
+}
+slide:not(.segue)  h8{
+ font-family: "Open Sans";
+ font-weight: 700;
+ color: #1E2227;
+}
+
+
+
+
+
 article p {
   font-family: "Open Sans"
 }
@@ -384,8 +446,7 @@ pre code {
 }
 
 .new-background {
-  background-image:url(https://dl.dropboxusercontent.com/u/103222/presentations/images/londonr_background_1100x700.jpg);
-}
+  background-image:url(https://dl.dropboxusercontent.com/u/103222/presentations/images/londonr_background_1100x700.jpg); }
 
 .new-background-rev {
   background-image:url(https://dl.dropboxusercontent.com/u/103222/presentations/images/londonr_background_1100x700_rev.jpg);

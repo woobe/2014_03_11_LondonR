@@ -66,12 +66,12 @@
  <h4><br></h4>
 
 <ol>
-<li><h2>Why R?</h2></li>
-<li><h2>Introducing &#39;CrimeMap&#39;</h2></li>
-<li><h2>What&#39;s Next?</h2></li>
-<li><h2>Beyond Data and Maps</h2></li>
-<li><h2>Conclusions</h2></li>
-<li><h2>Q &amp; A</h2></li>
+<li><h9>Why R?</h9></li>
+<li><h9>Introducing &#39;CrimeMap&#39;</h9></li>
+<li><h9>What&#39;s Next?</h9></li>
+<li><h9>Beyond Data and Maps</h9></li>
+<li><h9>Conclusions</h9></li>
+<li><h9>Q &amp; A</h9></li>
 </ol>
 
 </div>    
@@ -87,27 +87,902 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="new-background" id="slide-2" style="background:;">
+<slide class="dark segue nobackground" id="slide-2" style="background:;">
   <hgroup>
-    <h2>CrimeMap - Application Examples</h2>
+    <h2>Why <img src="images/logo_r.png" alt="R" width="85"> ?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>What People Think I Do</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><center><img src="images/whatido_1.jpg" alt="peoplethink"></center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>What People Think I Do</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><center><img src="images/whatido_2.jpg" alt="peoplethink"></center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="r-can-do-that" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>R Can Do That ?</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:30%'>
+ <p><center><img src="images/RCDT_cat.jpg" alt="cat" width="225"></center></p>
+
+<p><center><h9> ... and more !?</h9></center></p>
+
+<p><center><h3>Thanks to Tal Galili&#39;s</h3></center>
+<center><img src="images/r_bloggers_combi.png" alt="cat" height="150"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:65%'>
+ 
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Taking My Leap of Faith (Jan - Mar 2013)</h2>
   </hgroup>
   <article data-timings="">
       
 <div class='left' style='float:left;width:48%'>
- <p><center><h2>London (roadmap)</h2></center>
-<center><img src="images/example_london.png" alt="london" width="450"><center></p>
+ <p><br>
+<h9>Data Analysis (Coursera)</h9></p>
+
+<ul>
+<li><h3>MOOC by Jeff Leek</h3></li>
+<li><h3>Practical data analysis using R</h3></li>
+<li><h3>Peer reviewed assignments</h3></li>
+<li><h3>Kaggle Competition</h3></li>
+</ul>
 
 </div>    
 <div class='right' style='float:right;width:48%'>
- <p><center><h2>Brighton (hybrid)</h2></center>
-<center><img src="images/example_brighton.png" alt="brighton" width="450"><center></p>
+ <p><br>
+<h9>The &#39;R&#39; Awesomeness</h9></p>
+
+<ul>
+<li>Data Manipulation (reshape2, plyr)</li>
+<li>Machine Learning (caret)</li>
+<li>Parallel Processing (foreach, doSNOW)</li>
+<li>Big Data (bigmemory, ff, RHadoop)</li>
+<li>Visualisation (rCharts, ggplot2, animation)</li>
+<li>Dynamic Documentation (knitr, roxygen2)</li>
+<li>User Community (LondonR)</li>
+<li>Active Development of New Packages (ggvis, dplyr, SparkR ...)</li>
+</ul>
 
 </div>
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="new-background" id="slide-3" style="background:;">
+<slide class="dark segue nobackground" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Introducing &#39;CrimeMap&#39;</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - The Original by David Kahle</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><img src="images/ggmap_examples.jpg" alt="ggmap"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><img src="images/ggmap_bin2d.jpg" alt="dk_map1"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Maybe I can try it with different data?</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:42%'>
+ <p><h9>Is there any?</h9>
+<center><img src="images/google_results.png" alt="results"></center></p>
+
+<p><h9>Open Data and API!</h9></p>
+
+<p>Download crime data within a 1 mile radius of a single point (JSON)</p>
+
+<pre><code>http://data.police.uk/api/
+       crimes-street/all-crime?
+      lat=52.629729&amp;
+      lng=-1.131592&amp;
+      date=2012-04
+</code></pre>
+
+</div>    
+<div class='right' style='float:right;width:54%'>
+ <p><h9>Raw Data in JSON format</h9></p>
+
+<pre><code>{&quot;category&quot; : &quot;anti-social-behaviour&quot;, 
+ &quot;month&quot;    : &quot;2012-04&quot;, 
+ &quot;location&quot; : {
+  &quot;latitude&quot;  : &quot;52.640374&quot;, 
+  &quot;longitude&quot; : &quot;-1.122319&quot;,
+  &quot;street&quot;    : {
+   &quot;id&quot;   : 884330, 
+   &quot;name&quot; : &quot;On or near Christow Street&quot;}}, 
+  ... and some other stuff}
+</code></pre>
+
+<h4><br></h4>
+
+<p><h9>Improvement since then</h9></p>
+
+<p>Specific area (JSON) and batch download (CSV).</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Putting it together!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>First Milestone: A Wrapper Function (June 2013)</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <pre><code class="r">crimeplot.wrapper &lt;- function(
+
+    ## user-defined location
+    point.of.interest = &quot;London Eye&quot;, 
+
+    ## period of time in YYYY-MM
+    period = c(&quot;2013-01&quot;,&quot;2013-02&quot;,
+               &quot;2013-03&quot;,&quot;2013-04&quot;),
+
+    ## terrain, satellite, hybrid
+    type.map          = &quot;roadmap&quot;,
+
+    ## month, category, type
+    type.facet        = NA
+
+    ...)   
+</code></pre>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><img src="images/example_london.png" alt="london"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Application Examples (Map Type)</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><img src="images/example_brighton.png" alt="brighton"></center>
+<center><h3>Brighton (Map: Hybrid)</h3></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><img src="images/example_bristol.png" alt="bristol"></center>
+<center><h3>Bristol (Map: Terrain)</h3></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Application Examples (Facet)</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <h4><br></h4>
+
+<p><center><img src="images/example_sheffield.png" alt="shef"></center>
+<center><h3>Sheffield (by Category)</h3></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <h4><br></h4>
+
+<p><center><img src="images/example_exeter_month.png" alt="exeter"></center>
+<center><h3>Exeter (by Month) </h3></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>Making it Shiny!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Making it Shiny!</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <h4><br></h4>
+
+<p><center><h9>Shiny</h9></center></p>
+
+<p>&quot;Shiny makes it super simple for R users like you to turn analyses into interactive web applications that anyone can use.&quot; - RStudio</p>
+
+<h4><br></h4>
+
+<p><center><h9>ShinyApps Server</h9></center></p>
+
+<p>&quot;ShinyApps is a platform as a service (PaaS) for hosting Shiny applications ... allowing you to create your online account, and deploy your first Shiny application to the cloud.&quot; - RStudio</p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <h4><br></h4>
+
+<p><center><h9>Motivation</h9></center></p>
+
+<p>&quot;It looks fun! Maybe I can learn a new trick!&quot;</p>
+
+<h4><br></h4>
+
+<p><center><h9>Challenges</h9></center></p>
+
+<p>&quot;Can I make it super user-friendly ... so easy that even my mom knows how to use it?&quot;</p>
+
+<p>&quot;Is it really possible? I have <b>NO prior web app development experience</b> at all.&quot;</p>
+
+<p>&quot;Will it work on mobile devices?&quot;</p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>Second Milestone: Shiny Web App (Nov 2013)</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4><br></h4>
+
+<p><h8>Controls, Data Table, Heat Map &amp; Trends</h8></p>
+
+<p><center><img src="images/milestone_2013_11.png" alt="milestone2"></center></p>
+
+<p><center><h3><a href="http://bit.ly/bib_crimemap">bit.ly/bib_crimemap</a></h3></center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Keep It Simple, Stupid</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><h9>Basic Controls</h9></center></p>
+
+<p><center><img src="images/shiny_ui_basic.png" alt="basic" width="325"></center></p>
+
+<p><center><h9>Push the Button!</h9></center></p>
+
+<p><center><img src="images/shiny_ui_button.png" alt="london" width="300"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><h9>Output</h9></center>
+<center><img src="images/example_quickoutput.png" alt="london" width="450"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-18" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Control Freak !!!</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><h9>More Controls</h9></center>
+<center><img src="images/shiny_ui_more.png" alt="more" height="450"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><h9>What&#39;s Your Favourite?</h9></center>
+<center><img src="images/random_grid.png" alt="more" height="450"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-19" style="background:;">
+  <hgroup>
+    <h2>Sharing it with the world!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-20" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Hosting it with ShinyApps</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:50%'>
+ <h3>Set Credentials</h3>
+
+<pre><code class="r">setAccountInfo(name   = &quot;blenditbayes&quot;, 
+               token  = &quot;your_token&quot;, 
+               secret = &quot;your_secret&quot;) 
+</code></pre>
+
+<h3>Deploy it!</h3>
+
+<pre><code class="r">deployApp(appDir  = &quot;your_app_dir&quot;,
+          appName = &quot;your_app_name&quot;)
+</code></pre>
+
+<h3>Configure Instance Type</h3>
+
+<pre><code class="r">configureApp(appName = &quot;crimemap&quot;, 
+             size    = &quot;xlarge&quot;) 
+</code></pre>
+
+</div>    
+<div class='right' style='float:right;width:46%'>
+ <h3>Available Options</h3>
+
+<table><thead>
+<tr>
+<th>Instance</th>
+<th>Memory Size</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>small (default)</td>
+<td>256 MB</td>
+</tr>
+<tr>
+<td>medium</td>
+<td>512 MB</td>
+</tr>
+<tr>
+<td>large</td>
+<td>1024 MB</td>
+</tr>
+<tr>
+<td>xlarge</td>
+<td>2048 MB</td>
+</tr>
+<tr>
+<td>xxlarge</td>
+<td>4096 MB</td>
+</tr>
+</tbody></table>
+
+<h4><br></h4>
+
+<h3>For More Information</h3>
+
+<ol>
+<li>ShinyApps (Hassle-free Cloud Hosting) <a href="http://www.shinyapps.io/signup.html">Link</a></li>
+<li>Shiny Server (Host Your Own) - Free and Professional Version <a href="http://www.rstudio.com/shiny/server/">Link</a></li>
+</ol>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-21" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Using it on iPhone 4s &amp; Nexus 7</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><img src="images/iphone_final.png" alt="iphone"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><img src="images/nexus7_final.png" alt="nexus7"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-22" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Forked Projects</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><h9>Codes on GitHub</h9></center>
+<center><img src="images/share_github.png" alt="github"></center>
+<center><h3><a href="http://bit.ly/github_woobe">bit.ly/github_woobe</a></h3><center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><h9>Jonathan Sidi (Israel)</h9></center>
+<center><img src="images/yoni.png" alt="yoni"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Summary of Experience</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>CrimeMap - Summary of My Shiny Experience</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <h4><br></h4>
+
+<p><center><h9>Developing with Shiny</h9></center></p>
+
+<ol>
+<li>Rapid development - from noob to my first web app in a few days!</li>
+<li>Default layout is nice and simple. You can further customise it with CSS.</li>
+<li>It works on mobile devices!</li>
+<li>Easy code sharing.</li>
+<li>Even my mom knows how to use it!!!</li>
+</ol>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <h4><br></h4>
+
+<p><center><h9>Hosting with ShinyApps</h9></center></p>
+
+<ol>
+<li>Hassle-free. No need to worry about maintenance and data usage.</li>
+<li>Deploy (or update) your app in minutes.</li>
+<li>Great support from the RStudio team!</li>
+</ol>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>What&#39;s Next?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Discovering Cool Stuff from Ramnath Vaidyanathan</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><center><h9>You&#39;ve probably seen ...</h9></center>
+<center><img src="images/rv_slidify_rcharts.png" height="425"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><center><h9>... and now &#39;rMaps&#39; !</h9></center>
+<center><img src="images/rmaps.png" height="425"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>What if ... rMaps + CrimeMap?</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-28" style="background:;">
+  <hgroup>
+    <h2>Introducing Package &#39;rCrimemap&#39;</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><h8>Prerequisites</h8></p>
+
+<pre><code class="r">require(devtools)
+install.packages(c(&quot;ggmap&quot;, &quot;rjson&quot;,
+                   &quot;dplyr&quot;))
+install_github(&#39;ramnathv/rCharts@dev&#39;)
+install_github(&#39;ramnathv/rMaps&#39;)
+</code></pre>
+
+<h3>Latest RStudio IDE (v0.98.501+)</h3>
+
+<h4><br></h4>
+
+<p><h8>Install &#39;rCrimemap&#39;</h8></p>
+
+<pre><code class="r">install_github(&#39;woobe/rCrimemap&#39;)
+</code></pre>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><h8>Function &#39;rcmap()&#39;</h8></p>
+
+<pre><code class="r">rcmap(
+  location = &quot;Ball Brothers EC3R 7PP&quot;, 
+  period = &quot;2014-01&quot;,
+  type = &quot;All&quot;,
+  map_size = c(1000, 500), 
+  provider = &quot;Nokia.normalDay&quot;,
+  zoom = 10)
+</code></pre>
+
+<h4><br></h4>
+
+<p><h8>Codes</h8>
+<h8><a href="http://bit.ly/rCrimemap">bit.ly/rCrimemap</a></h8></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-29" style="background:;">
+  <hgroup>
+    <h2>Introducing Package &#39;rCrimemap&#39; - LondonR Demo</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">require(rCrimemap); rcmap(&quot;Ball Brothers EC3R 7PP&quot;);
+
+# [rCrimemap]: Downloading &#39;2010-12.rda&#39; from author&#39;s Bitbucket account ...
+# [rCrimemap]: Converting raw data into JSON format for Leaflet ...
+# [rCrimemap]: Creating Leaflet with Heat Map ...
+
+# [rCrimemap]: =======================================================
+# [rCrimemap]: Summary of Crime Data Used and Leaflet Map
+# [rCrimemap]: =======================================================
+
+# Point of Interest           : Ball Brothers EC3R 7PP 
+# Police Force(s)             : Metropolitan Police Service City of London Police 
+# Period of Crime Records     : 2010-12 
+# Type of Crime Records       : All 
+# Total No. of Crime Records  : 93077 
+# Map Resolution              : 1000 x 500 
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-30" style="background:;">
+  <hgroup>
+    <h2>Introducing Package &#39;rCrimemap&#39; - LondonR Demo</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <pre><code class="r">rcmap(&quot;Ball Brothers EC3R 7PP&quot;, 
+      &quot;2011-08&quot;, &quot;All&quot;, c(1000,1000),
+      &quot;Nokia.normalDay&quot;)
+</code></pre>
+
+<p><center><img src="images/ball_brothers_animation.gif" height="400"></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <pre><code class="r">rcmap(&quot;Manchester&quot;, 
+      &quot;2014-01&quot;, &quot;All&quot;, c(1000,1000), 
+      &quot;MapQuestOpen.OSM&quot;)
+</code></pre>
+
+<p><center><img src="images/manchester_animation.gif" height="400"></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-31" style="background:;">
+  <hgroup>
+    <h2>Beyond Data Points and Fancy Graphs</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Related BBC Articles</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><img src="images/bbc_2013_06.png" alt="bbc1">
+<center><a href="http://www.bbc.co.uk/news/uk-england-kent-22940563">BBC (17-Jun-2013)</a></h1></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><img src="images/bbc_2013_11.png" alt="bbc2">
+<center><a href="http://www.bbc.co.uk/news/uk-25002927">BBC (19-Nov-2013)</a></h1></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-33" style="background:;">
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:70%'>
+ <h2>Beyond Exploratory Analysis</h2>
+
+<h4><br></h4>
+
+<ul>
+<li><h8>Can we trust the data?</h8></li>
+<li><h8>Can we improve the data?</h8></li>
+<li><h8>Can we learn from the data?</h8></li>
+<li><h8>Can we predict crime rate?</h8></li>
+<li><h8>Can we optimise the resources?</h8></li>
+<li><h8>Can we build a new decision support system?</h8></li>
+</ul>
+
+</div>    
+<div class='right' style='float:right;width:30%'>
+ 
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="dark segue nobackground" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Conclusions</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Conclusions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><h9>Reasons why I shifted to R</h9>
+
+<ul>
+<li><h8>R is excellent for data mining, visualisation, big data, dynamic doc etc.</h8></li>
+</ul></li>
+<li><h9>CrimeMap</h9>
+
+<ul>
+<li><h8>a wonderful learning experience.</h8></li>
+<li><h8>a case study for Shiny and ShinyApps.</h8></li>
+</ul></li>
+<li><h9>Things keep evolving</h9>
+
+<ul>
+<li><h8>rMaps + CrimeMap = rCrimemap</h8></li>
+</ul></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Want to Find Out More About Shiny?</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:68%'>
+ <h4><br></h4>
+
+<h3><b>RStudio's</b>
+<a href="http://www.rstudio.com/shiny/" target="_blank">Intro</a>, 
+<a href="http://rstudio.github.io/shiny/tutorial/" target="_blank">Tutorial</a>, 
+<a href="http://www.rstudio.com/shiny/showcase/" target="_blank">Showcase</a> and 
+<a href="http://www.shinyapps.io/" target="_blank">ShinyApps</a>.</h3>
+
+<h4><br></h4>
+
+<h3><b>Chris Beeley's</b>
+<a href="http://chrisbeeley.net/website/shinytalk/TalkPage.html" target="_blank">LondonR Presentation (Dec 2013)</a> and 
+<a href="http://bit.ly/1dv2VDS" target="_blank">His Book.</a></h3>
+
+<h3><b>Another three copies for LondonR members!! </b><img src="images/1194985689770236807arrow_-_next_01.svg.hi.png" alt="arrow" height="20" width="35"><h3>
+<h8>Check out my <a href="http://bit.ly/blenditbayes" target="_blank">blog</a> at 9pm GMT+0 tomorrow!</h8>
+
+<h4><br></h4>
+<h3><b>Show Me Shiny - </b><a href="http://www.showmeshiny.com/" target="_blank">Gallery of R Web Apps </a>
+<img src="images/1194985689770236807arrow_-_next_01.svg.hi.png" alt="arrow" height="20" width="35"></h3>
+
+</div>    
+<div class='right' style='float:right;width:29%'>
+ <p><img src="images/4474OS_cov.jpg" alt="book"></p>
+
+<p><img src="images/showmeshiny.jpg" alt="showmeshiny"></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>John M. Chambers on R</h2>
+  </hgroup>
+  <article data-timings="">
+    <h4><br><br></h4>
+
+<p><h8>&quot;R has had a revolutionary effect on the way statistics are communicated ...&quot;</h8></p>
+
+<h4><br><br></h4>
+
+<p><h8>&quot;... for many things now, people produce the code, they produce an R package, an instantly, everyone else can use what they&#39;ve got freely and contribute their ideas to let things evolve.&quot;</h8></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>F.Y.I.</h2>
+  </hgroup>
+  <article data-timings="">
+      
+<div class='left' style='float:left;width:48%'>
+ <p><img src="images/logo_EARL_short.png" alt="EARL">
+<center><h2>Effective Applications of the R Language Conference 2014</h2></center>
+<center><h3><a href="http://www.earl-conference.com/">http://www.earl-conference.com/</a></h3></center></p>
+
+</div>    
+<div class='right' style='float:right;width:48%'>
+ <p><img src="images/meetup_logo.png" alt="ExeterR">
+<center><h2>Exeter R Users Group</h2></center>
+<center><h3><a href="http://bit.ly/rug_exeter/">http://bit.ly/rug_exeter/</a></h3></center></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>Acknowledgement</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>Thanks</th>
+<th>For</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><h3>Coursera &amp; Jeff Leek</h3></td>
+<td><h3>Data Analysis Online Course<h3></td>
+</tr>
+<tr>
+<td><h3>David Kahle &amp; Hadley Wickham</h3></td>
+<td><h3>ggmap and ggplot2</h3></td>
+</tr>
+<tr>
+<td><h3> data.police.uk</h3></td>
+<td><h3>Open Crime Data and API</h3></td>
+</tr>
+<tr>
+<td><h3>RStudio Team (esp. Tareef Kawaf)</h3></td>
+<td><h3>RStudio IDE, Shiny &amp; ShinyApps</h3></td>
+</tr>
+<tr>
+<td><h3>Chris Beeley &amp; Packt</h3></td>
+<td><h3>For the Shiny Cookbook</h3></td>
+</tr>
+<tr>
+<td><h3>Ramnath Vaidyanathan</h3></td>
+<td><h3>Slidify, rCharts and rMaps</h3></td>
+</tr>
+<tr>
+<td><h1>... and, most importantly, of course ...</h1><h2>Mango Solutions</h2></td>
+<td><h1>... kindly sponsoring and supporting</h1><h2>LondonR since 2009!</h2></td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="new-background" id="slide-40" style="background:;">
   <hgroup>
     <h2>Thank You for Your Attention!</h2>
   </hgroup>
@@ -116,7 +991,29 @@
 <div class='left' style='float:left;width:48%'>
  <p><h1>You can find the slides at </h1><h2>bit.ly/londonr_crimemap</h2></p>
 
-<p><center><img src="images/example_quickoutput.png" alt="quick" width="375"></center></p>
+<table><thead>
+<tr>
+<th>Other Stuff</th>
+<th>URL</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><h3>CrimeMap</h3></td>
+<td><h3><a href="http://bit.ly/bib_crimemap" target="_blank">bit.ly/bib_crimemap</a></h3></td>
+</tr>
+<tr>
+<td>CrimeMap Codes on GitHub</td>
+<td><h3><a href="http://bit.ly/github_crimemap" target="_blank">bit.ly/github_crimemap</a></h3></td>
+</tr>
+<tr>
+<td><h3>rCrimemap</h3></td>
+<td><h3><a href="http://bit.ly/github_rCrimemap" target="_blank">bit.ly/github_rCrimemap</a></h3></td>
+</tr>
+<tr>
+<td><h3>GitHub</h3></td>
+<td><h3><a href="http://bit.ly/github_woobe" target="_blank">bit.ly/github_woobe</a></h3></td>
+</tr>
+</tbody></table>
 
 </div>    
 <div class='right' style='float:right;width:48%'>
@@ -145,8 +1042,8 @@
 <td><h3><a href="http://bit.ly/linkedin_jofaichow" target="_blank">bit.ly/linkedin_jofaichow</a></h3></td>
 </tr>
 <tr>
-<td><h3>GitHub</h3></td>
-<td><h3><a href="http://bit.ly/github_woobe" target="_blank">bit.ly/github_woobe</a></h3></td>
+<td><h3>AboutMe</h3></td>
+<td><h3><a href="http://bit.ly/aboutme_jofaichow" target="_blank">bit.ly/aboutme_jofaichow</a></h3></td>
 </tr>
 </tbody></table>
 
@@ -167,14 +1064,236 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='CrimeMap - Application Examples'>
+        data-slide=2 title='Why <img src="images/logo_r.png" alt="R" width="85"> ?'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Thank You for Your Attention!'>
+        data-slide=3 title='What People Think I Do'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What People Think I Do'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='R Can Do That ?'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Taking My Leap of Faith (Jan - Mar 2013)'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Introducing &#39;CrimeMap&#39;'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='CrimeMap - The Original by David Kahle'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='CrimeMap - Maybe I can try it with different data?'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Putting it together!'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='First Milestone: A Wrapper Function (June 2013)'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='CrimeMap - Application Examples (Map Type)'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='CrimeMap - Application Examples (Facet)'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Making it Shiny!'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='CrimeMap - Making it Shiny!'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Second Milestone: Shiny Web App (Nov 2013)'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='CrimeMap - Keep It Simple, Stupid'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='CrimeMap - Control Freak !!!'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Sharing it with the world!'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='CrimeMap - Hosting it with ShinyApps'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='CrimeMap - Using it on iPhone 4s &amp; Nexus 7'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='CrimeMap - Forked Projects'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Summary of Experience'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='CrimeMap - Summary of My Shiny Experience'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='What&#39;s Next?'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Discovering Cool Stuff from Ramnath Vaidyanathan'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='What if ... rMaps + CrimeMap?'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Introducing Package &#39;rCrimemap&#39;'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Introducing Package &#39;rCrimemap&#39; - LondonR Demo'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Introducing Package &#39;rCrimemap&#39; - LondonR Demo'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Beyond Data Points and Fancy Graphs'>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Related BBC Articles'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title=''>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Conclusions'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Conclusions'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Want to Find Out More About Shiny?'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='John M. Chambers on R'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='F.Y.I.'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Acknowledgement'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Thank You for Your Attention!'>
+         40
       </a>
     </li>
   </ul>
